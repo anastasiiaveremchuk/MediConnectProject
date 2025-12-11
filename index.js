@@ -1,10 +1,10 @@
 ﻿require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const { connectDB } = require('./config/db');
+const { connectDB } = require('./src/config/db');
 
 // Імпортуємо маршрути
-const patientRoutes = require('./routes/patient.routes');
+const patientRoutes = require('./src/routes/patient.routes');
 
 const app = express();
 
